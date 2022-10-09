@@ -125,3 +125,21 @@ body{
     color: white;
 }
 
+.wd-color-lightgrey{
+    color: rgb(110, 118, 125);
+}
+
+.wd-border-bottom {
+    border-bottom: solid;
+    border-bottom-width: medium;
+    border-bottom-color: #0d6efd;
+}
+
+.wd-follow-suggestion-icon-size {
+    width: 48px;
+    height: 48px;
+}
+
+.wd-follow-suggestion-icon-move-up {
+    top: -8px;
+}
