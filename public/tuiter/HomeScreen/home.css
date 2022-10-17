@@ -1,0 +1,283 @@
+body{
+    font-family: Arial;
+    background-color: black;
+    color: white;
+    line-height: 1.5;
+}
+
+.wd-border-thin {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.wd-content-left-offset {
+    position: relative;
+    margin-left: 16px;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 40px;
+}
+
+::placeholder {
+    color: gray;
+}
+
+.wd-gear-icon-size {
+    height: 12px;
+    width: 12px;
+}
+
+.wd-gear-icon-size2 {
+    height: 36px;
+    width: 36px;
+}
+
+.wd-gear-padding-right {
+    right: 12px;
+}
+
+.wd-padding-all-around {
+    padding: 16px;
+}
+
+.wd-padding-left {
+    padding-left: 16px;
+}
+
+.wd-padding-right {
+    padding-right: 16px;
+}
+
+.wd-padding-top {
+    padding-top: 12px;
+}
+
+.wd-padding-bottom {
+    padding-bottom: 12px;
+}
+
+.wd-link-list {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.wd-link-font-size {
+    font-size: 15px;
+}
+
+.wd-link-unhighlighted {
+    color: rgb(110, 118, 125);
+    display: block;
+    text-decoration: none;
+}
+
+.wd-link-highlighted {
+    color: rgb(29,161,242);
+    border-bottom: solid 2px rgb(29, 161, 242);
+    display: block;
+    text-decoration: none;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-li-block {
+    display: block;
+}
+
+.wd-separator-bar {
+    margin: 0px;
+    height: 4px;
+    color: darkgray;
+    background-color: darkgray;
+}
+
+.wd-post-item-topic {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-post-item-content {
+    font-size: 16px;
+    color: white;
+}
+
+.wd-post-item-author {
+    font-weight: bold;
+    color: white;
+}
+
+.wd-post-item-title-text {
+    width: 600px;
+}
+
+.wd-post-item-pic {
+    width: 100px;
+    height: 100px;
+    float: right;
+    border-radius: 10px;
+    position: relative;
+}
+
+.wd-auto-overflow {
+    overflow: auto;
+}
+
+.wd-bookmark-title {
+    color: white;
+    font-size: 20px;
+}
+
+.wd-bookmark-user {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-bookmark-post-author-pic {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.wd-bookmark-padding-left {
+    padding-left: 12px;
+}
+
+.wd-bookmark-post-author-name {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-bookmark-post-author-handle {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-bookmark-post-content {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-grid-row {
+    clear: both;
+}
+
+.wd-bookmark-post-506-width {
+    width: 506px;
+}
+
+.wd-bookmark-post-padding-right {
+    padding-right: 16px;
+}
+
+.wd-bookmark-post-icon-padding-left {
+    padding-left: 12px;
+}
+
+.wd-bookmark-post-picture {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.wd-post-picture {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.wd-bookmark-post-link-padding {
+    padding: 12px;
+}
+
+.wd-bookmark-post-link {
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.wd-bookmark-post-link-title-bold {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-bookmark-post-link-content {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-bookmark-post-icon-grid {
+    float: left;
+    width: 25%;
+}
+
+.wd-bookmark-post-icon-no-underline {
+    text-decoration: none;
+}
+
+.wd-bookmark-post-icon-actioned {
+    color: red;
+}
+
+.wd-color-gray {
+    color: gray;
+}
+
+.wd-color-lightgray {
+    color: rgb(110, 118, 125);
+}
+
+.wd-border-color-gray {
+    border-color: lightgray;
+}
+
+.wd-color-black-bold {
+    color: black;
+    font-weight: bold;
+}
+
+.wd-follow-suggestion-icon-size {
+    width: 48px;
+    height: 48px;
+}
+
+.wd-follow-suggestion-icon-move-up {
+    top: -8px;
+}
+
+.wd-font-color-white {
+    color: white;
+}
+
+.wd-border-bottom {
+    border-bottom: solid;
+    border-bottom-width: medium;
+    border-bottom-color: #0d6efd;
+}
+
+.wd-search-bar-height {
+    height: 48px;
+}
+
+:active {
+    border-bottom: solid;
+    border-bottom-width: medium;
+    border-bottom-color: #0d6efd;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-hide-tuits {
+    visibility: hidden;
+}
+
+.wd-me-2 {
+    margin-right: 0.5rem;
+}
+Footer

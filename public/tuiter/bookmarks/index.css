@@ -194,6 +194,28 @@ body{
     border-bottom-right-radius: 20px;
 }
 
+.wd-bookmark-post-author-pic {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.wd-bookmark-post-author-handle {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-bookmark-post-author-name {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-bookmark-post-content {
+    font-size: 15px;
+    color: white;
+}
+
 .wd-bookmark-post-link-title-bold {
     font-size: 15px;
     color: white;

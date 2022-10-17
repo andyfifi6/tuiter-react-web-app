@@ -1,0 +1,20 @@
+export default [
+    {   userName: 'Dongfang Qingcang',
+        handle: 'dfqc',
+        postImage: 'https://i.imgur.com/rwxNNXQ.jpg',
+        linkTitle: 'Countdown: Mission to Cang Yan Sea',
+        linkContent: 'From training to launch, blablabla, blablabla',
+        time: '12h',
+        tuit: 'React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs',
+        userImage: '../../image/mjqc.jpeg',
+        comments: '123', retuits: '234', likes: '345', shares: '20'},
+
+    {   userName: 'Xiao Lanhua',
+        handle: 'xlh',
+        postImage: '../../image/ymz.JPG',
+        linkTitle: '',
+        linkContent: '',
+        time: '23h',
+        tuit: 'JavaScript is programming language that can run on browsers as well as desktops',
+        userImage: '../../image/mjxlh.jpeg', tweets: '123K',
+        comments: '123', retuits: '234', likes: '345', shares: '20'}, ];
