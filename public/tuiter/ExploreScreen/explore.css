@@ -5,10 +5,6 @@ body{
     line-height: 1.5;
 }
 
-.wd-border-thin {
-    border-style: solid;
-    border-width: 1px;
-}
 
 .wd-bg-border-color{
     border-color: rgb(47, 51, 54);
@@ -108,14 +104,13 @@ body{
     color: white;
 }
 
-.wd-post-pic{
-    width: 70px;
-    height: 80px;
+.wd-post-item-pic {
+    width: 100px;
+    height: 100px;
     float: right;
     border-radius: 10px;
     position: relative;
 }
-
 .wd-post-title{
     width: 600px;
 }
