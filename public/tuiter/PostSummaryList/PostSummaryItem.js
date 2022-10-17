@@ -1,7 +1,7 @@
 const PostSummaryItem = (post) => {
     return(`
         <li class="list-group-item text-white bg-black wd-border-thin wd-bg-border-color">
-                <img src=${post.image} class="wd-post-pic"/>
+                <img src=${post.image} class="wd-post-item-pic"/>
                 <div class="wd-post-title">
                     <div class="text-secondary">
                         ${post.topic}
