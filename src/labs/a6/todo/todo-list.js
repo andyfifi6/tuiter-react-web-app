@@ -4,6 +4,7 @@ const TodoList = () => {
     return(
         <>
             <h3>Todo List</h3>
+            <h3>Todo Item</h3>
             <ul>
                 {
                     todos.map(todo => {

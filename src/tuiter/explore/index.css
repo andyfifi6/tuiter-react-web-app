@@ -1,0 +1,77 @@
+.wd-tabs li {
+    display: inline;
+}
+
+.wd-tabs {
+    padding-left: 0px;
+}
+
+.wd-selected {
+    border-bottom: 2px blue solid;
+    padding-bottom: 20px;
+}
+
+.wd-nudge-up {
+    bottom: 18px;
+    left: 25px;
+}
+
+.wd-bottom-2 {
+    bottom: 2px;
+}
+
+.wd-bottom-4 {
+    bottom: 4px;
+}
+
+.wd-grid-row {
+    clear: both;
+}
+
+.wd-home-post-content {
+    font-size: 15px;
+    color: black;
+}
+
+
+.wd-home-post-link-padding {
+    padding: 12px;
+}
+
+.wd-home-post-link {
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.wd-home-post-link-title-bold {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-home-post-link-content {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-home-post-icon-grid {
+    float: left;
+    width: 25%;
+}
+
+.wd-home-post-icon-actioned {
+    color: red;
+}
+
+.wd-home-post-icon-no-underline {
+    text-decoration: none;
+}
+
+.wd-home-post-padding-right {
+    padding-right: 16px;
+}
+
+.wd-home-post-icon-padding-left {
+    padding-left: 12px;
+}
