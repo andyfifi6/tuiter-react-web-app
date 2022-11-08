@@ -1,16 +1,14 @@
 import React from "react";
-import PostListDetail from "./post-list-item";
-import list from "./list.json"
+import WhatsHappening from "./whats-happening";
+import TuitList from "../TuitsList";
 
 
 const HomeComponent = () => {
     return(
         <ul className="list-group">
-            {
-                list.map(list =>
-                    <PostListDetail
-                        list={list}/> )
-            }
+            <h4>Home</h4>
+            <WhatsHappening/>
+            <TuitList/>
         </ul>
     )
 }

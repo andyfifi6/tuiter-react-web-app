@@ -75,3 +75,25 @@
 .wd-home-post-icon-padding-left {
     padding-left: 12px;
 }
+
+.wd-home-post-picture {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.wd-profile-banner-pic{
+    position: relative;
+    top: 2px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.wd-profile-user-pic{
+    position: relative;
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    top: -60px
+}
