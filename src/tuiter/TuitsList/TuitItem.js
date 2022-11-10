@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../tuits/tuits-reducer";
+import {deleteTuit, likeTuit} from "../tuits/tuits-reducer";
 
 const TuitItem = ({
     tuit = {
@@ -21,6 +21,10 @@ const TuitItem = ({
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuit(id));
+    }
+    const likeTuitHandler = (id) => {
+        console.log(id);
+        dispatch(likeTuit(id));
     }
     return(
         <li className="list-group-item row mx-1 border rounded pt-2">
@@ -66,8 +70,15 @@ const TuitItem = ({
                     </div>
                     <div className="wd-home-post-icon-grid">
                         <div className="pt-2">
-                            <a href="#" className="wd-home-post-link-content wd-home-post-icon-no-underline">
-                                <i className="fas fa-heart wd-home-post-icon-actioned"></i>
+                            <a onClick={() => likeTuitHandler(tuit._id)} className="wd-home-post-link-content wd-home-post-icon-no-underline">
+                                {
+                                    tuit.liked &&
+                                    <i className="fas fa-heart wd-home-post-icon-actioned"></i>
+                                }
+                                {
+                                    !tuit.liked &&
+                                    <i className="fas fa-heart"></i>
+                                }
                                 <span className="wd-home-post-icon-padding-left">
                                     {tuit.likes}
                                 </span>
