@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit, likeTuit} from "../tuits/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
+import TuitStats from "./tuit-stats";
 
 const TuitItem = ({
     tuit = {
@@ -20,11 +21,7 @@ const TuitItem = ({
 }) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
-    }
-    const likeTuitHandler = (id) => {
-        console.log(id);
-        dispatch(likeTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
         <li className="list-group-item row mx-1 border rounded pt-2">
@@ -45,56 +42,7 @@ const TuitItem = ({
                 <div className="wd-home-post-content pb-2">
                     {tuit.tuit}
                 </div>
-
-                <div className="wd-grid-row">
-                    <div className="wd-home-post-icon-grid">
-                        <div className="pt-2">
-                            <a href="#" className="wd-home-post-link-content wd-home-post-icon-no-underline">
-                                <i className="far fa-comment"/>
-                                <span className="wd-home-post-icon-padding-left">
-                                    {tuit.replies}
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="wd-home-post-icon-grid">
-                        <div className="pt-2">
-                            <a href="#" className="wd-home-post-link-content wd-home-post-icon-no-underline">
-                                <i className="fas fa-share">
-                                </i>
-                                <span className="wd-home-post-icon-padding-left">
-                                    {tuit.retuits}
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="wd-home-post-icon-grid">
-                        <div className="pt-2">
-                            <a onClick={() => likeTuitHandler(tuit._id)} className="wd-home-post-link-content wd-home-post-icon-no-underline">
-                                {
-                                    tuit.liked &&
-                                    <i className="fas fa-heart wd-home-post-icon-actioned"></i>
-                                }
-                                {
-                                    !tuit.liked &&
-                                    <i className="fas fa-heart"></i>
-                                }
-                                <span className="wd-home-post-icon-padding-left">
-                                    {tuit.likes}
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="wd-home-post-icon-grid">
-                        <div className="pt-2">
-                            <a href="#" className="wd-home-post-link-content wd-home-post-icon-no-underline">
-                                <i className="fas fa-external-link-alt">
-                                </i>
-                            </a>
-                        </div>
-                    </div>
-                    <br/> <br/>
-                </div>
+                <TuitStats tuit={tuit}/>
             </div>
         </li>
     );
