@@ -1,7 +1,7 @@
 import axios from 'axios';
 const API_BASE = process.env.REACT_APP_API_BASE;
 const TUITS_API = `${API_BASE}/tuits`;
-console.log(TUITS_API)
+// console.log(TUITS_API)
 
 export const updateTuit = async (tuit) => {
     const response = await axios
