@@ -1,30 +1,38 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {updateTuitThunk} from "../../services/tuits-thunks";
+import { updateTuitThunk } from "../../services/tuits-thunks";
 
 const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
     const likeTuitHandler = () => {
         if (tuit.liked) {
             dispatch(
-                updateTuitThunk({ ...tuit, likes: tuit.likes - 1, liked: !tuit.liked })
-            );
+                updateTuitThunk({
+                    ...tuit,
+                    likes: tuit.likes - 1,
+                    liked: !tuit.liked }));
         } else {
             dispatch(
-                updateTuitThunk({ ...tuit, likes: tuit.likes + 1, liked: !tuit.liked })
-            );
+                updateTuitThunk({
+                    ...tuit,
+                    likes: tuit.likes + 1,
+                    liked: !tuit.liked }));
         }
     }
 
     const dislikeTuitHandler = () => {
         if (tuit.disliked) {
             dispatch(
-                updateTuitThunk({ ...tuit, dislikes: tuit.dislikes - 1, disliked: !tuit.disliked })
-            );
+                updateTuitThunk({
+                    ...tuit,
+                    dislikes: tuit.dislikes - 1,
+                    disliked: !tuit.disliked }));
         } else {
             dispatch(
-                updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1, disliked: !tuit.disliked })
-            );
+                updateTuitThunk({
+                    ...tuit,
+                    dislikes: tuit.dislikes + 1,
+                    disliked: !tuit.disliked }));
         }
     }
 
@@ -55,8 +63,8 @@ const TuitStats = ({tuit}) => {
                 <div className="pt-2">
                     <a className="wd-home-post-icon-no-underline wd-home-post-link-content"
                        onClick={likeTuitHandler}>
-                        {tuit.liked ? (
-                                <i className="wd-home-post-icon-no-underline wd-home-post-link-content fas fa-heart wd-home-post-icon-actioned"/>)
+                        {tuit.liked ?
+                            (<i className="wd-home-post-icon-no-underline wd-home-post-link-content fas fa-heart wd-home-post-icon-actioned"/>)
                             : (<i className="wd-home-post-icon-no-underline wd-home-post-link-content fas fa-heart"/>)}
                         {tuit.likes}
                     </a>
@@ -67,8 +75,8 @@ const TuitStats = ({tuit}) => {
                 <div className="pt-2">
                     <a className="wd-home-post-icon-no-underline wd-home-post-link-content"
                        onClick={dislikeTuitHandler}>
-                        {tuit.disliked ? (
-                                <i className="wd-home-post-icon-no-underline wd-home-post-link-content fas fa-heart-broken text-primary"/>)
+                        {tuit.disliked ?
+                            (<i className="wd-home-post-icon-no-underline wd-home-post-link-content fas fa-heart-broken text-primary"/>)
                             : (<i className="wd-home-post-icon-no-underline wd-home-post-link-content fas fa-heart-broken"/>)}
                         {tuit.dislikes}
                     </a>

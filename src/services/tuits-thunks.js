@@ -3,29 +3,29 @@ import {createAsyncThunk}
 import * as service
     from "./tuits-service"
 
+export const createTuitThunk = createAsyncThunk(
+    'tuits/createTuit',
+    async (tuit) => {
+        return (await service.createTuit(tuit))
+    }
+)
 export const findTuitsThunk = createAsyncThunk(
-    'tuits/findTuits', async () => {
-        const tuits = await service.findTuits()
-        return tuits
-    })
+    'tuits/findTuits',
+    async () => {
+        return (await service.findTuits());
+    }
+)
+
+export const updateTuitThunk =
+    createAsyncThunk(
+        'tuits/updateTuit',
+        async (tuit) => await service.updateTuit(tuit)
+    )
 
 export const deleteTuitThunk = createAsyncThunk(
     'tuits/deleteTuit',
     async (tuitId) => {
         await service.deleteTuit(tuitId)
         return tuitId
-    })
-
-export const createTuitThunk = createAsyncThunk(
-    'tuits/creatTuit',
-    async (tuit) => {
-        await service.createTuit(tuit)
-        return tuit
-    })
-
-export const updateTuitThunk =
-    createAsyncThunk(
-        'tuits/updateTuit',
-        async (tuit) =>
-            await service.updateTuit(tuit)
-    )
+    }
+)
